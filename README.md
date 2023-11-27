@@ -8,7 +8,7 @@ This project T-Shirt WebApp is a simple React-based web application that allows 
 - [API Usage](#api-usage)
 
 ## Link
-https://guileless-blini-79c244.netlify.app/home
+https://guileless-blini-79c244.netlify.app/
 
 <img width="948" alt="image" src="https://github.com/farizashakir1309/TeeRexStore/assets/69107931/c148c1cc-3aaa-4991-a53d-0e15f5094b9f">
 
