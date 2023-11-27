@@ -1,0 +1,29 @@
+body {
+    background-color: #F0D9E7;
+  }
+  main {
+    display: flex;
+  }
+  .App {
+    color: #2C2C2C;
+  }
+  ul li {
+    list-style: none;
+  }
+  button {
+    background-color: #8E518D; /* Mauve */
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.15s ease;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #A368B5; /* Thistle - Hover color */
+    transform: scale(1.05); /* Add a subtle scale effect on hover */
+  }
+  
+  
+  
