@@ -1,27 +1,31 @@
 import "./styles.css";
-import { Routes, Route} from 'react-router-dom';
-import {useState, useEffect} from "react";
+import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { GlobalStateProvider } from "./GlobalStateContext";
 
 export default function App() {
   const [data, setData] = useState({});
 
   const fetchData = () => {
-    fetch('https://geektrust.s3.ap-southeast-1.amazonaws.com/coding-problems/shopping-cart/catalogue.json')
-    .then((response)=> response.json() )
-    .then((data) => {
-      setData(data);
-    })
-    .catch((error) => console.log(error));
-  }
+    fetch(
+      "https://geektrust.s3.ap-southeast-1.amazonaws.com/coding-problems/shopping-cart/catalogue.json",
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setData(data);
+      })
+      .catch((error) => console.log(error));
+  };
 
-  useEffect(()=> {
+  useEffect(() => {
     fetchData();
-  },[]);
+  }, []);
 
   return (
+    <GlobalStateProvider>
       <div className="App">
-        <Routes>
-        </Routes>
+        <Routes></Routes>
       </div>
+    </GlobalStateProvider>
   );
 }
